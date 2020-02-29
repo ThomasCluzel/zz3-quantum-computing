@@ -9,6 +9,7 @@ The following circuits have been tested:
 1. Addition of two qubits with a previous carry
 1. Quantum "Guess the number": Bernstein-Vazirani algorithm
 1. Grover's search algorithm
+1. Inversion of simple functions using Grover's algorithm
 
 ## Simple quantum entanglement
 
@@ -34,6 +35,15 @@ a real device is enhanced to reduce the noise.
 
 One implementation in OpenQASM and two implementations in the Qiskit notebook
 with Z gates and with CNOT gates.
+
+## Grover's algorithm on simple functions
+
+In the first case, the function NOT is used (`NOT(x) = (x == 0) ? 1 : 0`).
+In the second case, the function AND is used (`AND(x,y) = (x == 1 && y == 1) ? 1 : 0`).
+In both cases, the antecedent(s) of `1` is/are searched.
+
+Implementations with OpenQASM and a Qiskit notebook are provided.
+More explanations can be found in the notebook.
 
 
 ## Miscellaneous information
